@@ -1,0 +1,307 @@
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+        <!-- Change The Color Scheme -->
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="tipsy/stylesheets/tipsy.css"/>
+        <link rel="shortcut icon" href="favicon.ico"  type="image/x-icon" />
+
+        <meta name="robots" content="noindex"/>
+        <meta name="googlebot" content="noindex"/>
+        <script src="jquery.js" type="text/javascript"></script>
+        <script src="tipsy/javascripts/jquery.tipsy.js" type="text/javascript"></script>
+        <!-- Enter Your Name -->
+        <title>Victor Tătărăşanu - Curriculam Vitae</title>
+
+        <script>
+        $(document).ready(function() {
+            $('.skillbar').tipsy({gravity:'s',fade:true});
+            (function() {
+            //settings
+            var fadeSpeed = 200, fadeTo = 0.5, topDistance = 30;
+            var topbarME = function() { $('#uberbar').fadeTo(fadeSpeed,1); }, topbarML = function() { $('#uberbar').fadeTo(fadeSpeed,fadeTo); };
+            var inside = false;
+            //do
+            $(window).scroll(function() {
+                position = $(window).scrollTop();
+                if(position > topDistance && !inside) {
+                    //add events
+                    topbarML();
+                    $('#uberbar').bind('mouseenter',topbarME);
+                    $('#uberbar').bind('mouseleave',topbarML);
+                    inside = true;
+                }
+                else if (position < topDistance){
+                    topbarME();
+                    $('#uberbar').unbind('mouseenter',topbarME);
+                    $('#uberbar').unbind('mouseleave',topbarML);
+                    inside = false;
+                }
+            });
+        })();
+    });
+
+    </script>
+</head>
+
+<body>
+    <div id="uberbar">
+        <div id="pdf" style="float:left"> <a target ="_blank" href="resume.pdf">download as pdf</a></div>
+        <div  class="social" >
+            <a href="http://twitter.com/#!/ttrssn" target="_blank"><img src="images/twitter.png"/>  </a>
+            <a href="https://www.facebook.com/tatarasanu.victor" target="_blank"><img src="images/facebook-logo.png"/></a>
+            <a href="mailto:ttrssn@yahoo.com" ><img src="images/yahoo.png"/></a>
+        </div>
+    </div>
+    <div id="wrap">
+        <div id="header-top"></div>
+        <div id="header">
+            <div id="header-content">
+
+                <!-- Enter Your Name -->
+                <h1>Victor Tătărăşanu</h1>
+                <div id="contact-details">
+                    <p>email: <span class="grey">victor.tatarasanu@gmail.com</span></p>
+                    <p>phone: <span class="grey">+40 (745) 265 862</span></p>
+                </div><!--end contact-details-->
+
+                <!-- Add Your "About Me" Details -->
+                <div id="about-me">
+                    <p>
+                        I'm a young, fast learner, hard-working developer.
+                        I'm driven by the passion to create awesome applications.
+                        I enjoy working in a team, debating ideas and finding the best solution to solve arising problems.
+                        I'm interested in Buddhism ideology and I admire Steve Jobs's dedication for great products.
+                    </p>
+                </div><!--end about-me-->
+                <!-- Enter Your Contact Details -->
+
+            </div><!--end header-content-->
+
+            <!-- Provide The Path To Your Image File -->
+            <div id="header-img">
+                <img src="images/author1.png" alt="[my name] CV" />
+            </div><!--end header-img-->
+        </div><!--end header-->
+        <div style="clear:both"></div>
+        <div style="margin-bottom:20px;"></div>
+
+        <!-- Edit The Details Below To Include Your Own Information -->
+        <div id="content">
+
+            <!-- EXPERIENCE SECTION -->
+            <div class="section">
+                <h2 class="experience">Experience</h2>
+            </div><!--end section-->
+            <div class="section-line"></div>
+
+            <div class="section-standard">
+                <div class="section-content">
+                    <h3>iOS Developer</h3>
+                    <h4>Nordlogic / Full Time / September 2011 - Present</h4>
+                    <p>My current position is iOS Developer and I'm working with Objective-C, Cocoa Touch, UIKit and Xcode on a daily basis. I've worked on various projects for iPhone and iPad and, at the moment, I'm experiencing with Mac OS development.</p>
+                </div><!--end section-content-->
+            </div>
+
+            <div class="section-standard">
+                <div class="section-content">
+                    <h3>Web Developer</h3>
+                    <h4>Nordlogic / Full Time / March 2011 -  February 2013</h4>
+                    <p>As a web developer, I worked with Php, Zend 1.x, jQuery, Facebook API, Twitter Bootstrap and other web frameworks. My work implied doing both frontend and backend parts.</p>
+                </div><!--end section-content-->
+            </div><!--end section-->
+
+            <div class="section-standard">
+                <div class="section-content">
+                    <h3>Freelancer</h3>
+                    <h4>Part-time / 2009 - Present</h4>
+                    <p>As a freelancer, I've worked in different areas including branding/logo design, e-commerce, web and ios projects.</p>
+                </div><!--end section-content-->
+            </div><!--end section-->
+
+            <!-- <div class="section-line"></div> -->
+
+            <!-- EXPERTISE SECTION -->
+            <div class="section">
+                <h2 class="expertise">Expertise</h2>
+            </div><!--end section-->
+            <div class="section-line"></div>
+
+<!--
+Levels:
+1.Newbie
+2.Rookie
+3.Beginner
+4.Talented
+5.Skilled
+6.Intermediate
+7.Proficient
+8.Experienced
+9.Advanced
+10.Senior
+-->
+
+            <div class="section-standard">
+                <div class="section-content">
+                    <div class="skill">
+                        <h3>iOS</h3>
+                            <div class="skillbar" original-title="Intermediate">
+                            <div class="skillbarfill skill60">Intermediate</div></div>
+                    </div>
+                </div><!--end section-content-->
+
+                <div class="section-content">
+                    <div class="skill">
+                        <h3>Objective-C</h3>
+                            <div class="skillbar" original-title="Intermediate">
+                            <div class="skillbarfill skill60">Intermediate</div></div>
+                    </div>
+                </div><!--end section-content-->
+                
+                <div class="section-content">
+                    <div class="skill">
+                        <h3>PHP</h3>
+                            <div class="skillbar" original-title="Skilled">
+                            <div class="skillbarfill skill50">Skilled</div></div>
+                    </div>
+                </div><!--end section-content-->
+
+                <div class="section-content">
+                    <div class="skill">
+                        <h3>Zend 1.x</h3>
+                            <div class="skillbar" original-title="Skilled">
+                            <div class="skillbarfill skill50">Skilled</div></div>
+                    </div>
+                </div><!--end section-content-->
+
+                <div class="section-content">
+                    <div class="skill">
+                        <h3>Social APIs</h3>
+                            <div class="skillbar" original-title="Skilled">
+                            <div class="skillbarfill skill50">Skilled</div></div>
+                    </div>
+                </div><!--end section-content-->
+                
+                <div class="section-content">
+                    <div class="skill">
+                        <h3>HTML / CSS</h3>
+                            <div class="skillbar" original-title="Talented">
+                            <div class="skillbarfill skill40">Talented</div></div>
+                    </div>
+                </div><!--end section-content-->
+
+                <div class="section-content">
+                    <div class="skill">
+                        <h3>JavaScript</h3>
+                            <div class="skillbar" original-title="Talented">
+                            <div class="skillbarfill skill40">Talented</div></div>
+                    </div>
+                </div><!--end section-content-->
+
+
+                <div class="section-content">
+                    <div class="skill">
+                        <h3>Unix</h3>
+                            <div class="skillbar" original-title="Talented">
+                            <div class="skillbarfill skill40">Talented</div></div>
+                    </div>
+                </div><!--end section-content-->
+
+                <div class="section-content">
+                    <div class="skill">
+                        <h3>Mac OS</h3>
+                            <div class="skillbar" original-title="Rookie">
+                            <div class="skillbarfill skill20">Rookie</div></div>
+                    </div>
+                </div><!--end section-content-->
+
+                <div class="section-content">
+                    <div class="skill">
+                        <h3>Ruby</h3>
+                            <div class="skillbar" original-title="Rookie">
+                            <div class="skillbarfill skill20">Rookie</div></div>
+                    </div>
+                </div><!--end section-content-->
+
+            </div><!--end section-standard-->
+
+
+                <!-- EDUCATION SECTION -->
+                <div class="section">
+                    <h2 class="education">Education</h2>
+                </div><!--end section-->
+                <div class="section-line"></div>
+
+                <div class="section-standard">
+                    <div class="section-content">
+                        <h3>Babes-Bolyai University</h3>
+                        <h4>Faculty of Mathematics &amp; Computer Science <br> 2009 - 2012</h4>
+                        <p> Bachelor in Computer Science</p>
+                    </div><!--end section-content-->
+                    <div class="section-content">
+                        <h3>"A.T Laurian" Highschool</h3>
+                        <h4>Class of Mathematics &amp; Computer Science <br> 2005 - 2009</h4>
+                        <p>Computer Science and Mathematics.</p>
+                    </div><!--end section-content-->
+                </div><!--end section-->
+
+
+                
+
+                <!-- Languages SECTION -->
+                <div class="section">
+                    <h2 class="training">Languages</h2>
+                </div><!--end section-->
+                <div class="section-line"></div>     
+
+                <div class="section-standard">
+                    <div class="section-content">
+                        <h3>English</h3>
+                        <div class="skill">
+                        <h4>Speaking</h4>
+                            <div class="skillbar" original-title="Intermediate">
+                                <div class="skillbarfill skill60">Intermediate</div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                         <h4>Writing</h4>
+                            <div class="skillbar" original-title="Proficient">
+                                <div class="skillbarfill skill70">Proficient</div></div>
+                        </div>
+
+                        <div class="skill">
+                        <h4>Reading</h4>
+                            <div class="skillbar" original-title="Proficient">
+                                <div class="skillbarfill skill70">Proficient</div></div>
+                        </div>
+                    </div><!--end section-content-->
+
+                    <div class="section-content">
+                        <h3>Romanian</h3>
+                        <div class="skill">
+                        <h4>Speaking</h4>
+                            <div class="skillbar" original-title="Excellent">
+                                <div class="skillbarfill skill100">Native</div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                        <h4>Writing</h4>
+                            <div class="skillbar" original-title="Excellent">
+                                <div class="skillbarfill skill100">Native</div></div>
+                        </div>
+                        <div class="skill">
+                        <h4>Reading</h4>
+                            <div class="skillbar" original-title="Excellent">
+                                <div class="skillbarfill skill100">Native</div></div>
+                        </div>
+                    </div><!--end section-content-->
+
+                </div><!--end section-->
+
+            </div><!--end content-->
+            <div id="footer"></div>
+        </div><!--end wrap-->
+    </body>
+    </html>
