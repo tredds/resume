@@ -87,15 +87,16 @@ p { margin: 0 0 15px 0; }
 #content .section img { float: left; margin: -3px 0 0 20px; }
 #content .section .section-content, #content .section-standard .section-content { float: left; width: 450px; margin: 3px 0 10px 70px; }
 #content .section-standard .section-content { margin-left: 449px; }
-#content .section .section-content h3, #content .section-standard .section-content h3 { color: #4BC2E3; margin: 0 0 3px 0;}
+#content .section .section-content h3, #content .section-standard .section-content h3 { color: #f97e6e; margin: 0 0 3px 0;}
 #content .section .section-content h4, #content .section-standard .section-content h4 { margin: 0 0 12px 0;}
+h3.without-color { color: #555555; }
 
 /*Skills */
 .skill h4{float:left; width: 150px; margin: 0px; clear: both;}
 .skill h3 {float:left; width: 150px;}
-.skillbar{width:280px;height:12px;background:url(images/skill-bar.gif) no-repeat 0 0;font-size:1px;float: right; margin-top: 5px;}
+.skillbar{width:280px;height:12px;background:url(images/skill-bar.png) no-repeat 0 0;font-size:1px;float: right; margin-top: 5px;}
 
-.skillbarfill{height:12px;background:url(images/skill-bar.gif) no-repeat 0 -12px;text-indent:-9999px;font-size:1px;}
+.skillbarfill{height:12px;background:url(images/skill-bar.png) no-repeat 0 -12px;text-indent:-9999px;font-size:1px;}
 
 .skill .skill10{width:10%!important}
 .skill .skill20{width:20%!important}
